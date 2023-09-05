@@ -21,7 +21,7 @@ function DeleteData() {
 
     try {
 
-      const response = await axios.put(`${API}/delete-teacher`, {teacherName : teacherName, teacherId : teacherId });
+      const response = await axios.delete(`${API}/delete-teacher`, {teacherName : teacherName, teacherId : teacherId });
 
       if(response.status === 201){
         
@@ -39,7 +39,7 @@ function DeleteData() {
 
     try {
 
-      const response = await axios.put(`${API}/delete-student`, {studentName: studentName, studentRoll: studentRoll, studentDivision : studentDivision});
+      const response = await axios.delete(`${API}/delete-student`, {studentName: studentName, studentRoll: studentRoll, studentDivision : studentDivision});
 
       if(response.status === 201){
         
