@@ -1,1 +1,1 @@
-export const API = "http://localhost:8090";
+export const API = "https://student-teacher-dashboard-server.onrender.com";
